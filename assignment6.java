@@ -39,8 +39,13 @@ class BinaryTree<T extends Comparable<T>> {
   //
   // STUDENTS MUST IMPLEMENT THIS METHOD!!!!
   public int size(){ // a method to return the number of elements in the tree
-    System.out.println("BinaryTree.size() method has not been implemented yet!!!!");
-    return -1;
+    return size(root);
+  }
+  private int size(Node<T> node){
+    if (node == null) {return 0;}
+    else {
+        return 1 + size(node.left) + size(node.right);
+    }
   }
 
   // ********************************** height() **********************************
@@ -187,6 +192,9 @@ public class assignment6 {
       System.out.println( "3: tree height");
       System.out.println( "4: display items");
       System.out.println( "5: delete item");
+      System.out.println( "6: get max item");
+      System.out.println( "7: get min item");
+      System.out.println( "8: print size");
       System.out.println( "9: exit");
       ch = sc.nextInt();
 
@@ -214,6 +222,15 @@ public class assignment6 {
           System.out.println( "enter item to delete:");
           item = sc.nextInt(); 
           tree.delete(item);
+          break;
+        case 6:
+          System.out.println("The maximum item is: " + tree.getMax());
+          break;
+        case 7:
+          System.out.println("The minimum item is: " + tree.getMin());
+          break;
+        case 8:
+          System.out.println("The size is: " + tree.size());
           break;
         case 9:
           quit = true;
