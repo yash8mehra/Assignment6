@@ -42,9 +42,9 @@ class BinaryTree<T extends Comparable<T>> {
     return size(root);
   }
   private int size(Node<T> node){
-    if (node == null) {return 0;}
+    if (node == null) {return 0;} //reached bottom
     else {
-        return 1 + size(node.left) + size(node.right);
+        return 1 + size(node.left) + size(node.right); //calls it recursively until null
     }
   }
 
@@ -113,15 +113,17 @@ class BinaryTree<T extends Comparable<T>> {
   }
 
 
-  // GET MAX METHOD
+  // ********************************** getMax() **********************************
+  // just going to the right until we hit null because the largest value will be
+  // on the right most side
   public T getMax(){
-      if (root == null) {
+      if (root == null) { //checking if there is a root, if not then return null
           System.out.println("The tree is empty");
           return null;
       }else{
-          Node<T> curr = root;
+          Node<T> curr = root; //make a dummy pointer kind of that traverses through
           while (curr.right != null){
-              curr = curr.right;
+              curr = curr.right; //this here is traversing it
           }
           return curr.element;
       }
@@ -130,30 +132,21 @@ class BinaryTree<T extends Comparable<T>> {
 
 
 
-  //GET MIN METHOD
-  public T getMin(){
+  // ********************************** getMin() **********************************
+  //the logic is the same as above here, go left until u hit null
+  // and then return what ever the left most value was
+public T getMin(){
       if (root == null){
-          System.out.println("Empty list");
+          System.out.println("Empty list"); // if no root then return nothing
           return null;
       }else{
-          Node<T> curr = root;
+          Node<T> curr = root; //dummy that traverses
           while (curr.left != null){
-              curr = curr.left;
+              curr = curr.left; //traversing left
           }
-          return curr.element;
+          return curr.element; //found min
       }
   }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -162,12 +155,13 @@ class BinaryTree<T extends Comparable<T>> {
   // STUDENTS MUST IMPLEMENT THIS METHOD!!!!
 
   public boolean find(T item){
-    if (root == null) {return false;}
+    if (root == null) {return false;} // if there isnt a tree then just false
     //ok so logic, if it equals root then return true, if greater then go right if less go left ez
-    Node<T> curr = root;
+    Node<T> curr = root;//dummy
 
-    while (curr != null){
-        int r = item.compareTo(curr.element);
+    while (curr != null){ //while you havent hit null anywhere
+        int r = item.compareTo(curr.element); //i tried using == at first but it didnt work so used compareTo()
+        //if item is more then r is positive if its less then r is negative if r is 0 then equal
         if (r > 0){
             curr = curr.right;
         }else if (r < 0){
@@ -177,7 +171,7 @@ class BinaryTree<T extends Comparable<T>> {
         }
     }
 
-    return false;
+    return false; //didnt find any matches
   }
 
   // ********************************** delete(T item) **********************************
@@ -264,7 +258,7 @@ public class assignment6 {
           tree.insert(item);
           break;
         case 2:
-          System.out.println( "enter item to insert:");
+          System.out.println("what item do you want to find?");
           item = sc.nextInt(); // read in an integer
           if(tree.find(item))
             System.out.println(item+" is found in the tree!");

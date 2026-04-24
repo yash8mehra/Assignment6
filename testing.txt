@@ -1,0 +1,242 @@
+Script started on 2026-04-23 21:47:16-04:00 [TERM="xterm-256color" TTY="/dev/pts/24" COLUMNS="120" LINES="30"]
+[?2004h]0;mehray2@thur114-hp1: ~/CSCI271/Assignment6[01;32mmehray2@thur114-hp1[00m:[01;34m~/CSCI271/Assignment6[00m$ javac assignment6.java 
+[?2004l[?2004h]0;mehray2@thur114-hp1: ~/CSCI271/Assignment6[01;32mmehray2@thur114-hp1[00m:[01;34m~/CSCI271/Assignment6[00m$ java assignment6 
+[?2004l____________Main Menu_____________________
+select option :
+1: insert item
+2: find item
+3: tree height
+4: display items
+5: delete item
+6: get max item
+7: get min item
+8: print size
+9: exit
+1
+enter item to insert:
+5
+____________Main Menu_____________________
+select option :
+1: insert item
+2: find item
+3: tree height
+4: display items
+5: delete item
+6: get max item
+7: get min item
+8: print size
+9: exit
+1
+enter item to insert:
+3
+____________Main Menu_____________________
+select option :
+1: insert item
+2: find item
+3: tree height
+4: display items
+5: delete item
+6: get max item
+7: get min item
+8: print size
+9: exit
+1
+enter item to insert:
+2
+____________Main Menu_____________________
+select option :
+1: insert item
+2: find item
+3: tree height
+4: display items
+5: delete item
+6: get max item
+7: get min item
+8: print size
+9: exit
+1
+enter item to insert:
+0
+____________Main Menu_____________________
+select option :
+1: insert item
+2: find item
+3: tree height
+4: display items
+5: delete item
+6: get max item
+7: get min item
+8: print size
+9: exit
+1
+enter item to insert:
+4
+____________Main Menu_____________________
+select option :
+1: insert item
+2: find item
+3: tree height
+4: display items
+5: delete item
+6: get max item
+7: get min item
+8: print size
+9: exit
+1
+enter item to insert:
+8
+____________Main Menu_____________________
+select option :
+1: insert item
+2: find item
+3: tree height
+4: display items
+5: delete item
+6: get max item
+7: get min item
+8: print size
+9: exit
+1
+enter item to insert:
+10
+____________Main Menu_____________________
+select option :
+1: insert item
+2: find item
+3: tree height
+4: display items
+5: delete item
+6: get max item
+7: get min item
+8: print size
+9: exit
+1
+enter item to insert:
+15
+____________Main Menu_____________________
+select option :
+1: insert item
+2: find item
+3: tree height
+4: display items
+5: delete item
+6: get max item
+7: get min item
+8: print size
+9: exit
+1
+enter item to insert:
+9
+____________Main Menu_____________________
+select option :
+1: insert item
+2: find item
+3: tree height
+4: display items
+5: delete item
+6: get max item
+7: get min item
+8: print size
+9: exit
+1
+enter item to insert:
+12
+____________Main Menu_____________________
+select option :
+1: insert item
+2: find item
+3: tree height
+4: display items
+5: delete item
+6: get max item
+7: get min item
+8: print size
+9: exit
+2
+enter item to insert:
+13
+Sorry... 13 is NOT found in the tree!
+____________Main Menu_____________________
+select option :
+1: insert item
+2: find item
+3: tree height
+4: display items
+5: delete item
+6: get max item
+7: get min item
+8: print size
+9: exit
+3
+The height of the tree is: 4
+____________Main Menu_____________________
+select option :
+1: insert item
+2: find item
+3: tree height
+4: display items
+5: delete item
+6: get max item
+7: get min item
+8: print size
+9: exit
+4
+displayAll():
+____________Tree of 10 items________________
+0 2 3 4 5 8 9 10 12 15 
+____________Main Menu_____________________
+select option :
+1: insert item
+2: find item
+3: tree height
+4: display items
+5: delete item
+6: get max item
+7: get min item
+8: print size
+9: exit
+5 6
+The maximum item is: 15
+____________Main Menu_____________________
+select option :
+1: insert item
+2: find item
+3: tree height
+4: display items
+5: delete item
+6: get max item
+7: get min item
+8: print size
+9: exit
+7
+The minimum item is: 0
+____________Main Menu_____________________
+select option :
+1: insert item
+2: find item
+3: tree height
+4: display items
+5: delete item
+6: get max item
+7: get min item
+8: print size
+9: exit
+8
+The size is: 10
+____________Main Menu_____________________
+select option :
+1: insert item
+2: find item
+3: tree height
+4: display items
+5: delete item
+6: get max item
+7: get min item
+8: print size
+9: exit
+9
+Goodbye!!
+[?2004h]0;mehray2@thur114-hp1: ~/CSCI271/Assignment6[01;32mmehray2@thur114-hp1[00m:[01;34m~/CSCI271/Assignment6[00m$ exit
+[?2004lexit
+
+Script done on 2026-04-23 21:49:00-04:00 [COMMAND_EXIT_CODE="0"]
