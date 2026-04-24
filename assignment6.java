@@ -112,6 +112,51 @@ class BinaryTree<T extends Comparable<T>> {
     }  
   }
 
+
+  // GET MAX METHOD
+  public T getMax(){
+      if (root == null) {
+          System.out.println("The tree is empty");
+          return null;
+      }else{
+          Node<T> curr = root;
+          while (curr.right != null){
+              curr = curr.right;
+          }
+          return curr.element;
+      }
+
+  }
+
+
+
+  //GET MIN METHOD
+  public T getMin(){
+      if (root == null){
+          System.out.println("Empty list");
+          return null;
+      }else{
+          Node<T> curr = root;
+          while (curr.left != null){
+              curr = curr.left;
+          }
+          return curr.element;
+      }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   // ********************************** Find(T item) **********************************
   //
   // STUDENTS MUST IMPLEMENT THIS METHOD!!!!
