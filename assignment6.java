@@ -162,7 +162,21 @@ class BinaryTree<T extends Comparable<T>> {
   // STUDENTS MUST IMPLEMENT THIS METHOD!!!!
 
   public boolean find(T item){
-    System.out.println("BinaryTree.find() method has not been implemented yet!!!!");
+    if (root == null) {return false;}
+    //ok so logic, if it equals root then return true, if greater then go right if less go left ez
+    Node<T> curr = root;
+
+    while (curr != null){
+        int r = item.compareTo(curr.element);
+        if (r > 0){
+            curr = curr.right;
+        }else if (r < 0){
+            curr = curr.left;
+        }else if (r == 0){
+            return true;
+        }
+    }
+
     return false;
   }
 
